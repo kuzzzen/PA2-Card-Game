@@ -16,7 +16,7 @@ Your engine must:
 The game supports user-defined decks of cards in the following format:
 Each line represents exactly one card:  
 `CARD_NAME CARD_DESCRIPTION CARD_SUIT CARD_DAMAGE CARD_HEALING CARD_TAKE CARD_RESTRICT`  
-If you want to add a card multiple times, simply repeat the line representing it.
+If you want to add a card multiple times, simply repeat the line representing it.  
 `CARD_DAMAGE` is the damage dealt to your opponent when the card is played  
 `CARD_HEALING` is the number of HP restored  
 `CARD_TAKE` is the name of some card from a deck. You will receive a copy of this card.  
