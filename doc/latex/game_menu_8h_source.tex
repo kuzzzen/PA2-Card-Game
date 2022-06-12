@@ -1,0 +1,24 @@
+\hypertarget{game_menu_8h_source}{}\doxysection{game\+Menu.\+h}
+\label{game_menu_8h_source}\index{src/menus/gameMenu.h@{src/menus/gameMenu.h}}
+\mbox{\hyperlink{game_menu_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef GAMEMENU\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define GAMEMENU\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{menu_8h}{menu.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_game_menu}{GameMenu}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_menu}{Menu}} \{}
+\DoxyCodeLine{8 \textcolor{keyword}{public}:}
+\DoxyCodeLine{9     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_game_menu_acb29d3d5af9984fc53cf52e19b2a5119}{GameMenu}}(\textcolor{keyword}{const} std::vector <std::shared\_ptr<Card>> \&cards);}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{12     uint8\_t \mbox{\hyperlink{class_game_menu_add437bd94a13322bf859259bb0943e27}{showAndGetChoice}}(\textcolor{keyword}{const} std::string \&title) \textcolor{keyword}{override};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{15     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_menu_a21fa2d513985733d6e5d3e9ecd036cdb}{showCard}}(\textcolor{keyword}{const} std::shared\_ptr <Card> \&card);}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{private}:}
+\DoxyCodeLine{18     std::vector <std::shared\_ptr<Card>> m\_Hand; }
+\DoxyCodeLine{19 \};}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

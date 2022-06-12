@@ -1,0 +1,31 @@
+Select game mode, choose a deck, and start playing!
+
+
+Each turn, choose one card and press ENTER.
+The goal is to get your opponent's HP to zero before they do so to you.
+You take one card from the deck every turn.
+
+
+The game menu shows the cards you can play as well as "Save" and "Exit" options;
+If you want to save the game and load it later, choose "Save" before you exit the game.
+Your game will be saved to "games" directory under the name you specify.
+You can load saved games from the main menu.
+
+
+If you want to load your own deck, upload a text file to "decks" directory.
+The format is the following:
+1. Each line represents one card.
+2. If you want to place a card into the deck multiple times, simply copy the line again.
+3. Each line is a set of space-separated values:
+   CARD_NAME CARD_DESCRIPTION CARD_SUIT CARD_DAMAGE CARD_HEALING CARD_RESTRICTION CARD_GET_CARD
+4. CARD_DAMAGE and CARD_HEALING fields should contain a value or 0 if not applied.
+   CARD_DAMAGE deals damage to your opponent. CARD_HEALING restores your HP.
+5. CARD_GET_CARD gives you a card.
+   Please specify card name or "-".
+6. CARD_RESTRICTION restricts you opponent from playing all cards of some suit in their next turn.
+   Please specify suit name or "-".
+
+
+
+
+Press any key to go back to the main menu.

@@ -1,0 +1,27 @@
+\hypertarget{effect_8h_source}{}\doxysection{effect.\+h}
+\label{effect_8h_source}\index{src/effects/effect.h@{src/effects/effect.h}}
+\mbox{\hyperlink{effect_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef EFFECT\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define EFFECT\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_effect}{Effect}} \{}
+\DoxyCodeLine{9 \textcolor{keyword}{public}:}
+\DoxyCodeLine{10     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_effect_a852e62f39e7ab63c195384de80468f41}{Effect}}(std::string type);}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_effect_add97d9d51e27bb83cb05b3eb6a327709}{\string~Effect}}() noexcept = default;}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{15     [[nodiscard]] virtual std::\textcolor{keywordtype}{string} \mbox{\hyperlink{class_effect_a0b4fef24e972da97e023ad678813649e}{getType}}() const;}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{18     [[nodiscard]] virtual std::shared\_ptr <\mbox{\hyperlink{class_effect}{Effect}}> \mbox{\hyperlink{class_effect_a2a6919c74ece5a27c5b280d261d3a524}{getPtr}}() const = 0;}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 protected:}
+\DoxyCodeLine{21     std::\textcolor{keywordtype}{string} \mbox{\hyperlink{class_effect_a7611047677c6b8aecbb394e30782eeea}{m\_Type}};}
+\DoxyCodeLine{22 \};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

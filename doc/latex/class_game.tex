@@ -1,0 +1,112 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+Largest class in program. Represents and handles games.  
+
+
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_a4735989677c1cab18866f3ae4ee0aa1c}{Game}} ()=default
+\item 
+\mbox{\hyperlink{class_game_a22020d773772ed46fe9198780a65fdf5}{Game}} (const std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ $>$ \&deck\+\_\+, const int \&game\+Mode)
+\item 
+\mbox{\hyperlink{class_game_aba45bacd677907b50e1044f05fa73769}{Game}} (const std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ $>$ \&deck\+\_\+, const int \&game\+Mode, const int \&start\+HP1, const int \&start\+HP2)
+\begin{DoxyCompactList}\small\item\em Additional constructor with HP for running games. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_a3d09cd0b68ef69107d36360ca903e023}{$\sim$\+Game}} ()=default
+\item 
+void \mbox{\hyperlink{class_game_a8715391521d496fdeee9b69cc919cdcb}{start}} (const int \&cards\+Per\+Hand1, const int \&cards\+Per\+Hand2, bool loaded)
+\begin{DoxyCompactList}\small\item\em Starts the game and fills players\textquotesingle{} hands with cards. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_ae5831bae95b9805e415954bbbf70d504}{is\+Still\+Playable}} () const
+\begin{DoxyCompactList}\small\item\em Returns true if everyone is alive and has cards. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_aa5b996762f6ce138e484bb26970951d1}{load\+From\+File}} (const std\+::string \&game\+Name)
+\begin{DoxyCompactList}\small\item\em Loads running game from file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ $>$ \mbox{\hyperlink{class_game_a22dc7e267905e29f5349b24d461be9bb}{remove\+Restricted}} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ $>$ \&hand, const std\+::string \&suit)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Largest class in program. Represents and handles games. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_a4735989677c1cab18866f3ae4ee0aa1c}\label{class_game_a4735989677c1cab18866f3ae4ee0aa1c}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_game_a22020d773772ed46fe9198780a65fdf5}\label{class_game_a22020d773772ed46fe9198780a65fdf5}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{const std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ $>$ \&}]{deck\+\_\+,  }\item[{const int \&}]{game\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_aba45bacd677907b50e1044f05fa73769}\label{class_game_aba45bacd677907b50e1044f05fa73769}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{const std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ $>$ \&}]{deck\+\_\+,  }\item[{const int \&}]{game\+Mode,  }\item[{const int \&}]{start\+HP1,  }\item[{const int \&}]{start\+HP2 }\end{DoxyParamCaption})}
+
+
+
+Additional constructor with HP for running games. 
+
+\mbox{\Hypertarget{class_game_a3d09cd0b68ef69107d36360ca903e023}\label{class_game_a3d09cd0b68ef69107d36360ca903e023}} 
+\index{Game@{Game}!````~Game@{$\sim$Game}}
+\index{````~Game@{$\sim$Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{$\sim$Game()}{~Game()}}
+{\footnotesize\ttfamily Game\+::$\sim$\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_ae5831bae95b9805e415954bbbf70d504}\label{class_game_ae5831bae95b9805e415954bbbf70d504}} 
+\index{Game@{Game}!isStillPlayable@{isStillPlayable}}
+\index{isStillPlayable@{isStillPlayable}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{isStillPlayable()}{isStillPlayable()}}
+{\footnotesize\ttfamily bool Game\+::is\+Still\+Playable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if everyone is alive and has cards. 
+
+\mbox{\Hypertarget{class_game_aa5b996762f6ce138e484bb26970951d1}\label{class_game_aa5b996762f6ce138e484bb26970951d1}} 
+\index{Game@{Game}!loadFromFile@{loadFromFile}}
+\index{loadFromFile@{loadFromFile}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{loadFromFile()}{loadFromFile()}}
+{\footnotesize\ttfamily void Game\+::load\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{game\+Name }\end{DoxyParamCaption})}
+
+
+
+Loads running game from file. 
+
+\mbox{\Hypertarget{class_game_a22dc7e267905e29f5349b24d461be9bb}\label{class_game_a22dc7e267905e29f5349b24d461be9bb}} 
+\index{Game@{Game}!removeRestricted@{removeRestricted}}
+\index{removeRestricted@{removeRestricted}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{removeRestricted()}{removeRestricted()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ $>$ Game\+::remove\+Restricted (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ $>$ \&}]{hand,  }\item[{const std\+::string \&}]{suit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_a8715391521d496fdeee9b69cc919cdcb}\label{class_game_a8715391521d496fdeee9b69cc919cdcb}} 
+\index{Game@{Game}!start@{start}}
+\index{start@{start}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Game\+::start (\begin{DoxyParamCaption}\item[{const int \&}]{cards\+Per\+Hand1,  }\item[{const int \&}]{cards\+Per\+Hand2,  }\item[{bool}]{loaded }\end{DoxyParamCaption})}
+
+
+
+Starts the game and fills players\textquotesingle{} hands with cards. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{game_8h}{game.\+h}}\item 
+src/\mbox{\hyperlink{game_8cpp}{game.\+cpp}}\end{DoxyCompactItemize}

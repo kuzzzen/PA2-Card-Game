@@ -1,0 +1,24 @@
+\hypertarget{effect_restriction_8h_source}{}\doxysection{effect\+Restriction.\+h}
+\label{effect_restriction_8h_source}\index{src/effects/effectRestriction.h@{src/effects/effectRestriction.h}}
+\mbox{\hyperlink{effect_restriction_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef EFFECTRESTRICTION\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define EFFECTRESTRICTION\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{effect_8h}{effect.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_effect_restriction}{EffectRestriction}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_effect}{Effect}} \{}
+\DoxyCodeLine{8 \textcolor{keyword}{public}:}
+\DoxyCodeLine{9     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_effect_restriction_abc420fbddb1e38adae3092d0edc60d8f}{EffectRestriction}}(std::string suit);}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{12     [[nodiscard]] std::string \mbox{\hyperlink{class_effect_restriction_a0f6d09ce18b6c8c587f5fdfa231c4b58}{getRestrictions}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14     [[nodiscard]] std::shared\_ptr <Effect> \mbox{\hyperlink{class_effect_restriction_afe159d71e081f3053c1a1f45828bea9a}{getPtr}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     std::string m\_SuitToBan;}
+\DoxyCodeLine{18 \};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

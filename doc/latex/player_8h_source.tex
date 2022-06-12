@@ -1,0 +1,55 @@
+\hypertarget{player_8h_source}{}\doxysection{player.\+h}
+\label{player_8h_source}\index{src/players/player.h@{src/players/player.h}}
+\mbox{\hyperlink{player_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef PLAYER\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define PLAYER\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}../card.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}../effects/effect.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}../effects/effectDamage.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}../effects/effectHealing.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}../effects/effectGetCard.h"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}../effects/effectRestriction.h"{}}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_player}{Player}} \{}
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \mbox{\hyperlink{class_player_a6bf562a599aed4c8cbb82468480f92d7}{Player}}(\textcolor{keyword}{const} std::string \&type\_, \textcolor{keyword}{const} \textcolor{keywordtype}{int} \&startHP);}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_player_a11017c0ed8a639f3b1308ab167fbeca2}{\string~Player}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{23     [[nodiscard]] \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_player_a3966588630ad0a127c9250f985865392}{isAlive}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_player_aac0cc6785dba951c8959717d26659d53}{makeMove}}(\textcolor{keyword}{const} std::shared\_ptr <Card> \&card);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_player_ab4afbe823c5e2f77a2ce492e15ee8e79}{affect}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_effect}{Effect}} \&effect);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{32     [[nodiscard]] \textcolor{keywordtype}{int} \mbox{\hyperlink{class_player_aa1e4de605eb436711fcff947cfee2cc2}{getHp}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{35     [[nodiscard]] std::string \mbox{\hyperlink{class_player_a11afad2b138a88793da6eff30d567fa6}{getType}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{38     [[nodiscard]] std::string \mbox{\hyperlink{class_player_a73e4ff2d70e62ca7e3be1d9b4ad9de85}{getName}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_player_a5327426f9a93ab70f1b32de8e89b1cbc}{setOpponent}}(\textcolor{keyword}{const} std::shared\_ptr <Player> \&player);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{class_game}{Game}};}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{47     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_player_aea1fa07ca26a0e6f3c1907e1c438fe58}{m\_Hp}};}
+\DoxyCodeLine{48     std::vector <std::shared\_ptr<Card>> \mbox{\hyperlink{class_player_ab98855f3b37a47c020b5f8dc3610bd6d}{m\_Hand}};}
+\DoxyCodeLine{49     std::shared\_ptr <Player> \mbox{\hyperlink{class_player_a00169d689013d5569ea9a5e1b91fb47f}{m\_Opponent}};}
+\DoxyCodeLine{50     std::string \mbox{\hyperlink{class_player_af19adba1492a6110c11e2598fedb8c5a}{m\_RestrictedSuit}};}
+\DoxyCodeLine{51     std::string \mbox{\hyperlink{class_player_ad1eec76d5b6a12932b5bf530bd0bcbac}{m\_CardToGet}};}
+\DoxyCodeLine{52     std::string \mbox{\hyperlink{class_player_aa781bd946b599c836d9528ac5996ee01}{m\_Type}};}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_player_a4337f60a1d1ac1cecd96f54c5c63abf7}{removeFromHand}}(\textcolor{keyword}{const} std::shared\_ptr <Card> \&card);}
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

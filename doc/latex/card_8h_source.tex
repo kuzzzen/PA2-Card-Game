@@ -1,0 +1,41 @@
+\hypertarget{card_8h_source}{}\doxysection{card.\+h}
+\label{card_8h_source}\index{src/card.h@{src/card.h}}
+\mbox{\hyperlink{card_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CARD\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CARD\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{effect_8h}{effects/effect.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{effect_damage_8h}{effects/effectDamage.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{effect_healing_8h}{effects/effectHealing.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{effect_get_card_8h}{effects/effectGetCard.h}}"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{effect_restriction_8h}{effects/effectRestriction.h}}"{}}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_card}{Card}} \{}
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     \mbox{\hyperlink{class_card_abedc64b36ac8f47f738604c8c86b729b}{Card}}(std::string name, std::string description, std::string suit, std::vector <std::shared\_ptr<Effect>> effects);}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_card_a24d9140b69cd7fcc6b4787350fdeb5e9}{\string~Card}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{22     std::vector <std::shared\_ptr<Effect>> \mbox{\hyperlink{class_card_a3bf08bcc4a409ad9383151b0fbb411c1}{getEffects}}();}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{25     [[nodiscard]] std::string \mbox{\hyperlink{class_card_a906ec0559a62e3bed4ccd518cacbe34c}{getName}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{28     [[nodiscard]] std::string \mbox{\hyperlink{class_card_ad8292653b62ffab05af810d3be240161}{getDescription}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{31     [[nodiscard]] std::string \mbox{\hyperlink{class_card_a57f5af7c1cd9ab839f3fb32bb186681c}{getEffectsAsString}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{34     [[nodiscard]] std::string \mbox{\hyperlink{class_card_aee4149cf300420237604615f7b57b1e8}{getSuit}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{37     std::string \mbox{\hyperlink{class_card_abde7e9fd0fb5a78dacf92f84d92b2c66}{m\_Title}}, \mbox{\hyperlink{class_card_ad6bd9e14eb8b37ba44fcc30abe30e6e6}{m\_Description}}, \mbox{\hyperlink{class_card_a7269daadf670dd94779ecde559eb2e77}{m\_Suit}};}
+\DoxyCodeLine{38     std::vector <std::shared\_ptr<Effect>> \mbox{\hyperlink{class_card_a3678ac9e378a81d4a89d6ce13bb5911a}{m\_Effects}};    }
+\DoxyCodeLine{39 \};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

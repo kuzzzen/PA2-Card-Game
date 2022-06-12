@@ -1,0 +1,23 @@
+\hypertarget{deck_loader_8h_source}{}\doxysection{deck\+Loader.\+h}
+\label{deck_loader_8h_source}\index{src/deckLoader.h@{src/deckLoader.h}}
+\mbox{\hyperlink{deck_loader_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef DECK\_LOADER\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define DECK\_LOADER\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <queue>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{card_8h}{card.h}}"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_deck_loader}{DeckLoader}} \{}
+\DoxyCodeLine{10 \textcolor{keyword}{public}:}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_deck_loader_a243951a76c940571bcbe2f77a81c8ab7}{DeckLoader}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{14     \textcolor{keyword}{static} std::vector <std::shared\_ptr<Card>> \mbox{\hyperlink{class_deck_loader_ad07af83ac1dca9013c94980d388ca6ac}{load}}(\textcolor{keyword}{const} std::string \&deckPath, \textcolor{keywordtype}{bool} noShuffle);}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{17     \textcolor{keyword}{static} std::queue <std::shared\_ptr<Card>> \mbox{\hyperlink{class_deck_loader_a6cabe6c60472d0a97bc893b928b19033}{loadAsQueue}}(\textcolor{keyword}{const} std::string \&deckPath, \textcolor{keywordtype}{bool} noShuffle);}
+\DoxyCodeLine{18 \};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

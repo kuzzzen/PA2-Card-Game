@@ -1,0 +1,35 @@
+\hypertarget{menu_8h_source}{}\doxysection{menu.\+h}
+\label{menu_8h_source}\index{src/menus/menu.h@{src/menus/menu.h}}
+\mbox{\hyperlink{menu_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MENU\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MENU\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <ncurses.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}../card.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_menu}{Menu}} \{}
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12     \mbox{\hyperlink{class_menu_a69569825cd50302e0e82d73efde16eca}{Menu}}(\textcolor{keyword}{const} std::initializer\_list <std::string> \&options);}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_menu_a69569825cd50302e0e82d73efde16eca}{Menu}}(\textcolor{keyword}{const} std::vector <std::shared\_ptr<Card>> \&options);}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_menu_a69569825cd50302e0e82d73efde16eca}{Menu}}(\textcolor{keyword}{const} std::vector <std::string> \&options);}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_menu_a8fc4104b08c9a24d1dab18b82a82b7da}{\string~Menu}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{21     \textcolor{keyword}{virtual} uint8\_t \mbox{\hyperlink{class_menu_a7e373e1b2c649a5e5a79571badf050c3}{showAndGetChoice}}(\textcolor{keyword}{const} std::string \&title);}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{25     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_menu_a5bf01466af3d3fa7f758a9e19eb867ce}{initialize}}(\textcolor{keyword}{const} std::string \&title, \textcolor{keyword}{const} uint8\_t \&width, \textcolor{keyword}{const} \textcolor{keywordtype}{int} \&extendBy);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     std::vector <std::string> \mbox{\hyperlink{class_menu_aeb8e0c6071e227a3aae99a363d27595e}{m\_Options}};    }
+\DoxyCodeLine{28     uint8\_t \mbox{\hyperlink{class_menu_a9d48b04fab4e07ac436a70ab74829726}{m\_Size}};}
+\DoxyCodeLine{29     WINDOW *\mbox{\hyperlink{class_menu_a71d7588ed5f019108610a684b075c73d}{m\_Menu}}\{\};   }
+\DoxyCodeLine{30 \};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

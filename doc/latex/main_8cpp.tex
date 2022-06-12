@@ -1,0 +1,69 @@
+\hypertarget{main_8cpp}{}\doxysection{src/main.cpp File Reference}
+\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$filesystem$>$}\newline
+{\ttfamily \#include \char`\"{}menus/menu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}deck\+Loader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}how\+To\+Play\+Window.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8cpp_ad20a9dcd2344d6ca22a8a4607d1c5721}{DECKS\+\_\+\+PATH}}~\char`\"{}decks\char`\"{}
+\item 
+\#define \mbox{\hyperlink{main_8cpp_ae694c18c9817d779af45179c1da830b9}{GAMES\+\_\+\+PATH}}~\char`\"{}games\char`\"{}
+\item 
+\#define \mbox{\hyperlink{main_8cpp_a547f431dadccd760947483b7c2ff36b8}{HOW\+\_\+\+TO\+\_\+\+PATH}}~\char`\"{}resources/how\+\_\+to\+\_\+play\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{main_8cpp_ab2f3065fa70f3d8731a884da611747c4}{get\+Files}} (const std\+::string \&dir, const int \&index)
+\begin{DoxyCompactList}\small\item\em Loading files via filesystem. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Waits for user\textquotesingle{}s choice in main menu and handles it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{main_8cpp_ad20a9dcd2344d6ca22a8a4607d1c5721}\label{main_8cpp_ad20a9dcd2344d6ca22a8a4607d1c5721}} 
+\index{main.cpp@{main.cpp}!DECKS\_PATH@{DECKS\_PATH}}
+\index{DECKS\_PATH@{DECKS\_PATH}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{DECKS\_PATH}{DECKS\_PATH}}
+{\footnotesize\ttfamily \#define DECKS\+\_\+\+PATH~\char`\"{}decks\char`\"{}}
+
+\mbox{\Hypertarget{main_8cpp_ae694c18c9817d779af45179c1da830b9}\label{main_8cpp_ae694c18c9817d779af45179c1da830b9}} 
+\index{main.cpp@{main.cpp}!GAMES\_PATH@{GAMES\_PATH}}
+\index{GAMES\_PATH@{GAMES\_PATH}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{GAMES\_PATH}{GAMES\_PATH}}
+{\footnotesize\ttfamily \#define GAMES\+\_\+\+PATH~\char`\"{}games\char`\"{}}
+
+\mbox{\Hypertarget{main_8cpp_a547f431dadccd760947483b7c2ff36b8}\label{main_8cpp_a547f431dadccd760947483b7c2ff36b8}} 
+\index{main.cpp@{main.cpp}!HOW\_TO\_PATH@{HOW\_TO\_PATH}}
+\index{HOW\_TO\_PATH@{HOW\_TO\_PATH}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{HOW\_TO\_PATH}{HOW\_TO\_PATH}}
+{\footnotesize\ttfamily \#define HOW\+\_\+\+TO\+\_\+\+PATH~\char`\"{}resources/how\+\_\+to\+\_\+play\char`\"{}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_ab2f3065fa70f3d8731a884da611747c4}\label{main_8cpp_ab2f3065fa70f3d8731a884da611747c4}} 
+\index{main.cpp@{main.cpp}!getFiles@{getFiles}}
+\index{getFiles@{getFiles}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{getFiles()}{getFiles()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ get\+Files (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{dir,  }\item[{const int \&}]{index }\end{DoxyParamCaption})}
+
+
+
+Loading files via filesystem. 
+
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Waits for user\textquotesingle{}s choice in main menu and handles it. 
+

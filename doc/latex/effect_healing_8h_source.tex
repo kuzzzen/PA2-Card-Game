@@ -1,0 +1,24 @@
+\hypertarget{effect_healing_8h_source}{}\doxysection{effect\+Healing.\+h}
+\label{effect_healing_8h_source}\index{src/effects/effectHealing.h@{src/effects/effectHealing.h}}
+\mbox{\hyperlink{effect_healing_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef EFFECTHEALING\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define EFFECTHEALING\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{effect_8h}{effect.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_effect_healing}{EffectHealing}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_effect}{Effect}} \{}
+\DoxyCodeLine{8 \textcolor{keyword}{public}:}
+\DoxyCodeLine{9     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_effect_healing_a44565ef37252f964f8acc7dba3b95e2d}{EffectHealing}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \&value\_);}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11     [[nodiscard]] \textcolor{keywordtype}{int} \mbox{\hyperlink{class_effect_healing_a43782499769ed6f6b1626544b5b7c479}{getValue}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     [[nodiscard]] std::shared\_ptr <Effect> \mbox{\hyperlink{class_effect_healing_a1506f474a13cc657e41dfdbddaff6bbf}{getPtr}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{private}:}
+\DoxyCodeLine{16     \textcolor{keywordtype}{int} m\_Value;}
+\DoxyCodeLine{17 \};}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

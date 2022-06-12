@@ -1,0 +1,93 @@
+\hypertarget{class_effect}{}\doxysection{Effect Class Reference}
+\label{class_effect}\index{Effect@{Effect}}
+
+
+Base class for all effects.  
+
+
+
+
+{\ttfamily \#include $<$effect.\+h$>$}
+
+Inheritance diagram for Effect\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_effect}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effect_a852e62f39e7ab63c195384de80468f41}{Effect}} (std\+::string type)
+\item 
+virtual \mbox{\hyperlink{class_effect_add97d9d51e27bb83cb05b3eb6a327709}{$\sim$\+Effect}} () noexcept=default
+\item 
+virtual std\+::string \mbox{\hyperlink{class_effect_a0b4fef24e972da97e023ad678813649e}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Returns effect type. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_effect}{Effect}} $>$ \mbox{\hyperlink{class_effect_a2a6919c74ece5a27c5b280d261d3a524}{get\+Ptr}} () const =0
+\begin{DoxyCompactList}\small\item\em Returns shared\+\_\+ptr to correct effect (to avoid using dynamic\+\_\+cast too much) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_effect_a7611047677c6b8aecbb394e30782eeea}{m\+\_\+\+Type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for all effects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_effect_a852e62f39e7ab63c195384de80468f41}\label{class_effect_a852e62f39e7ab63c195384de80468f41}} 
+\index{Effect@{Effect}!Effect@{Effect}}
+\index{Effect@{Effect}!Effect@{Effect}}
+\doxysubsubsection{\texorpdfstring{Effect()}{Effect()}}
+{\footnotesize\ttfamily Effect\+::\+Effect (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_effect_add97d9d51e27bb83cb05b3eb6a327709}\label{class_effect_add97d9d51e27bb83cb05b3eb6a327709}} 
+\index{Effect@{Effect}!````~Effect@{$\sim$Effect}}
+\index{````~Effect@{$\sim$Effect}!Effect@{Effect}}
+\doxysubsubsection{\texorpdfstring{$\sim$Effect()}{~Effect()}}
+{\footnotesize\ttfamily virtual Effect\+::$\sim$\+Effect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_effect_a2a6919c74ece5a27c5b280d261d3a524}\label{class_effect_a2a6919c74ece5a27c5b280d261d3a524}} 
+\index{Effect@{Effect}!getPtr@{getPtr}}
+\index{getPtr@{getPtr}!Effect@{Effect}}
+\doxysubsubsection{\texorpdfstring{getPtr()}{getPtr()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_effect}{Effect}} $>$ Effect\+::get\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns shared\+\_\+ptr to correct effect (to avoid using dynamic\+\_\+cast too much) 
+
+
+
+Implemented in \mbox{\hyperlink{class_effect_damage_a2996fb9e2b400973f21f2baeb6d10c77}{Effect\+Damage}}, \mbox{\hyperlink{class_effect_get_card_adf9bed5a74d88677a64752ceadf38b84}{Effect\+Get\+Card}}, \mbox{\hyperlink{class_effect_healing_a1506f474a13cc657e41dfdbddaff6bbf}{Effect\+Healing}}, and \mbox{\hyperlink{class_effect_restriction_afe159d71e081f3053c1a1f45828bea9a}{Effect\+Restriction}}.
+
+\mbox{\Hypertarget{class_effect_a0b4fef24e972da97e023ad678813649e}\label{class_effect_a0b4fef24e972da97e023ad678813649e}} 
+\index{Effect@{Effect}!getType@{getType}}
+\index{getType@{getType}!Effect@{Effect}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily std\+::string Effect\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns effect type. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_effect_a7611047677c6b8aecbb394e30782eeea}\label{class_effect_a7611047677c6b8aecbb394e30782eeea}} 
+\index{Effect@{Effect}!m\_Type@{m\_Type}}
+\index{m\_Type@{m\_Type}!Effect@{Effect}}
+\doxysubsubsection{\texorpdfstring{m\_Type}{m\_Type}}
+{\footnotesize\ttfamily std\+::string Effect\+::m\+\_\+\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/effects/\mbox{\hyperlink{effect_8h}{effect.\+h}}\item 
+src/effects/\mbox{\hyperlink{effect_8cpp}{effect.\+cpp}}\end{DoxyCompactItemize}

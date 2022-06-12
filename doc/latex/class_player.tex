@@ -1,0 +1,218 @@
+\hypertarget{class_player}{}\doxysection{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+Represent a player. Extended with card-\/picking algorithm by \mbox{\hyperlink{class_player_computer}{Player\+Computer}}.  
+
+
+
+
+{\ttfamily \#include $<$player.\+h$>$}
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_a6bf562a599aed4c8cbb82468480f92d7}{Player}} (const std\+::string \&type\+\_\+, const int \&start\+HP)
+\item 
+virtual \mbox{\hyperlink{class_player_a11017c0ed8a639f3b1308ab167fbeca2}{$\sim$\+Player}} ()=default
+\item 
+bool \mbox{\hyperlink{class_player_a3966588630ad0a127c9250f985865392}{is\+Alive}} () const
+\begin{DoxyCompactList}\small\item\em True if HP \texorpdfstring{$>$}{>} 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_aac0cc6785dba951c8959717d26659d53}{make\+Move}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ \&card)
+\begin{DoxyCompactList}\small\item\em Makes move with a card and use its effects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_ab4afbe823c5e2f77a2ce492e15ee8e79}{affect}} (const \mbox{\hyperlink{class_effect}{Effect}} \&effect)
+\begin{DoxyCompactList}\small\item\em Affects player with an effect (healing for self, all others for m\+\_\+\+Opponent) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_aa1e4de605eb436711fcff947cfee2cc2}{get\+Hp}} () const
+\begin{DoxyCompactList}\small\item\em Gets HP. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_player_a11afad2b138a88793da6eff30d567fa6}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Gets Type (human or computer) \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_player_a73e4ff2d70e62ca7e3be1d9b4ad9de85}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Returns name (empty string for computer) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a5327426f9a93ab70f1b32de8e89b1cbc}{set\+Opponent}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_player}{Player}} $>$ \&player)
+\begin{DoxyCompactList}\small\item\em Sets m\+\_\+\+Opponent ton pointer to given player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_a4337f60a1d1ac1cecd96f54c5c63abf7}{remove\+From\+Hand}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ \&card)
+\begin{DoxyCompactList}\small\item\em Removes played card from m\+\_\+\+Hand. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_player_aea1fa07ca26a0e6f3c1907e1c438fe58}{m\+\_\+\+Hp}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ $>$ \mbox{\hyperlink{class_player_ab98855f3b37a47c020b5f8dc3610bd6d}{m\+\_\+\+Hand}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_player}{Player}} $>$ \mbox{\hyperlink{class_player_a00169d689013d5569ea9a5e1b91fb47f}{m\+\_\+\+Opponent}}
+\item 
+std\+::string \mbox{\hyperlink{class_player_af19adba1492a6110c11e2598fedb8c5a}{m\+\_\+\+Restricted\+Suit}}
+\item 
+std\+::string \mbox{\hyperlink{class_player_ad1eec76d5b6a12932b5bf530bd0bcbac}{m\+\_\+\+Card\+To\+Get}}
+\item 
+std\+::string \mbox{\hyperlink{class_player_aa781bd946b599c836d9528ac5996ee01}{m\+\_\+\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_player_aa2fab026580d6f14280c2ffb8063a314}{Game}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represent a player. Extended with card-\/picking algorithm by \mbox{\hyperlink{class_player_computer}{Player\+Computer}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_a6bf562a599aed4c8cbb82468480f92d7}\label{class_player_a6bf562a599aed4c8cbb82468480f92d7}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type\+\_\+,  }\item[{const int \&}]{start\+HP }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_player_a11017c0ed8a639f3b1308ab167fbeca2}\label{class_player_a11017c0ed8a639f3b1308ab167fbeca2}} 
+\index{Player@{Player}!````~Player@{$\sim$Player}}
+\index{````~Player@{$\sim$Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{$\sim$Player()}{~Player()}}
+{\footnotesize\ttfamily virtual Player\+::$\sim$\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_ab4afbe823c5e2f77a2ce492e15ee8e79}\label{class_player_ab4afbe823c5e2f77a2ce492e15ee8e79}} 
+\index{Player@{Player}!affect@{affect}}
+\index{affect@{affect}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{affect()}{affect()}}
+{\footnotesize\ttfamily void Player\+::affect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_effect}{Effect}} \&}]{effect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Affects player with an effect (healing for self, all others for m\+\_\+\+Opponent) 
+
+\mbox{\Hypertarget{class_player_aa1e4de605eb436711fcff947cfee2cc2}\label{class_player_aa1e4de605eb436711fcff947cfee2cc2}} 
+\index{Player@{Player}!getHp@{getHp}}
+\index{getHp@{getHp}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHp()}{getHp()}}
+{\footnotesize\ttfamily int Player\+::get\+Hp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets HP. 
+
+\mbox{\Hypertarget{class_player_a73e4ff2d70e62ca7e3be1d9b4ad9de85}\label{class_player_a73e4ff2d70e62ca7e3be1d9b4ad9de85}} 
+\index{Player@{Player}!getName@{getName}}
+\index{getName@{getName}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Player\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns name (empty string for computer) 
+
+\mbox{\Hypertarget{class_player_a11afad2b138a88793da6eff30d567fa6}\label{class_player_a11afad2b138a88793da6eff30d567fa6}} 
+\index{Player@{Player}!getType@{getType}}
+\index{getType@{getType}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily std\+::string Player\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets Type (human or computer) 
+
+\mbox{\Hypertarget{class_player_a3966588630ad0a127c9250f985865392}\label{class_player_a3966588630ad0a127c9250f985865392}} 
+\index{Player@{Player}!isAlive@{isAlive}}
+\index{isAlive@{isAlive}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{isAlive()}{isAlive()}}
+{\footnotesize\ttfamily bool Player\+::is\+Alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+True if HP \texorpdfstring{$>$}{>} 0. 
+
+\mbox{\Hypertarget{class_player_aac0cc6785dba951c8959717d26659d53}\label{class_player_aac0cc6785dba951c8959717d26659d53}} 
+\index{Player@{Player}!makeMove@{makeMove}}
+\index{makeMove@{makeMove}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{makeMove()}{makeMove()}}
+{\footnotesize\ttfamily void Player\+::make\+Move (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ \&}]{card }\end{DoxyParamCaption})}
+
+
+
+Makes move with a card and use its effects. 
+
+\mbox{\Hypertarget{class_player_a4337f60a1d1ac1cecd96f54c5c63abf7}\label{class_player_a4337f60a1d1ac1cecd96f54c5c63abf7}} 
+\index{Player@{Player}!removeFromHand@{removeFromHand}}
+\index{removeFromHand@{removeFromHand}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{removeFromHand()}{removeFromHand()}}
+{\footnotesize\ttfamily void Player\+::remove\+From\+Hand (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ \&}]{card }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Removes played card from m\+\_\+\+Hand. 
+
+\mbox{\Hypertarget{class_player_a5327426f9a93ab70f1b32de8e89b1cbc}\label{class_player_a5327426f9a93ab70f1b32de8e89b1cbc}} 
+\index{Player@{Player}!setOpponent@{setOpponent}}
+\index{setOpponent@{setOpponent}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setOpponent()}{setOpponent()}}
+{\footnotesize\ttfamily void Player\+::set\+Opponent (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_player}{Player}} $>$ \&}]{player }\end{DoxyParamCaption})}
+
+
+
+Sets m\+\_\+\+Opponent ton pointer to given player. 
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_player_aa2fab026580d6f14280c2ffb8063a314}\label{class_player_aa2fab026580d6f14280c2ffb8063a314}} 
+\index{Player@{Player}!Game@{Game}}
+\index{Game@{Game}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Game}{Game}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_game}{Game}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_player_ad1eec76d5b6a12932b5bf530bd0bcbac}\label{class_player_ad1eec76d5b6a12932b5bf530bd0bcbac}} 
+\index{Player@{Player}!m\_CardToGet@{m\_CardToGet}}
+\index{m\_CardToGet@{m\_CardToGet}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{m\_CardToGet}{m\_CardToGet}}
+{\footnotesize\ttfamily std\+::string Player\+::m\+\_\+\+Card\+To\+Get\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_player_ab98855f3b37a47c020b5f8dc3610bd6d}\label{class_player_ab98855f3b37a47c020b5f8dc3610bd6d}} 
+\index{Player@{Player}!m\_Hand@{m\_Hand}}
+\index{m\_Hand@{m\_Hand}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{m\_Hand}{m\_Hand}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_card}{Card}}$>$ $>$ Player\+::m\+\_\+\+Hand\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_player_aea1fa07ca26a0e6f3c1907e1c438fe58}\label{class_player_aea1fa07ca26a0e6f3c1907e1c438fe58}} 
+\index{Player@{Player}!m\_Hp@{m\_Hp}}
+\index{m\_Hp@{m\_Hp}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{m\_Hp}{m\_Hp}}
+{\footnotesize\ttfamily int Player\+::m\+\_\+\+Hp\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_player_a00169d689013d5569ea9a5e1b91fb47f}\label{class_player_a00169d689013d5569ea9a5e1b91fb47f}} 
+\index{Player@{Player}!m\_Opponent@{m\_Opponent}}
+\index{m\_Opponent@{m\_Opponent}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{m\_Opponent}{m\_Opponent}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_player}{Player}}$>$ Player\+::m\+\_\+\+Opponent\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_player_af19adba1492a6110c11e2598fedb8c5a}\label{class_player_af19adba1492a6110c11e2598fedb8c5a}} 
+\index{Player@{Player}!m\_RestrictedSuit@{m\_RestrictedSuit}}
+\index{m\_RestrictedSuit@{m\_RestrictedSuit}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{m\_RestrictedSuit}{m\_RestrictedSuit}}
+{\footnotesize\ttfamily std\+::string Player\+::m\+\_\+\+Restricted\+Suit\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_player_aa781bd946b599c836d9528ac5996ee01}\label{class_player_aa781bd946b599c836d9528ac5996ee01}} 
+\index{Player@{Player}!m\_Type@{m\_Type}}
+\index{m\_Type@{m\_Type}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{m\_Type}{m\_Type}}
+{\footnotesize\ttfamily std\+::string Player\+::m\+\_\+\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/players/\mbox{\hyperlink{player_8h}{player.\+h}}\item 
+src/players/\mbox{\hyperlink{player_8cpp}{player.\+cpp}}\end{DoxyCompactItemize}

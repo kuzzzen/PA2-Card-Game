@@ -1,0 +1,72 @@
+\hypertarget{class_effect_restriction}{}\doxysection{Effect\+Restriction Class Reference}
+\label{class_effect_restriction}\index{EffectRestriction@{EffectRestriction}}
+
+
+Restricts opponent from playing specific suit next turn.  
+
+
+
+
+{\ttfamily \#include $<$effect\+Restriction.\+h$>$}
+
+Inheritance diagram for Effect\+Restriction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_effect_restriction}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effect_restriction_abc420fbddb1e38adae3092d0edc60d8f}{Effect\+Restriction}} (std\+::string suit)
+\item 
+std\+::string \mbox{\hyperlink{class_effect_restriction_a0f6d09ce18b6c8c587f5fdfa231c4b58}{get\+Restrictions}} () const
+\begin{DoxyCompactList}\small\item\em Returns banned suit name. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_effect}{Effect}} $>$ \mbox{\hyperlink{class_effect_restriction_afe159d71e081f3053c1a1f45828bea9a}{get\+Ptr}} () const override
+\begin{DoxyCompactList}\small\item\em Returns shared\+\_\+ptr to correct effect (to avoid using dynamic\+\_\+cast too much) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Restricts opponent from playing specific suit next turn. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_effect_restriction_abc420fbddb1e38adae3092d0edc60d8f}\label{class_effect_restriction_abc420fbddb1e38adae3092d0edc60d8f}} 
+\index{EffectRestriction@{EffectRestriction}!EffectRestriction@{EffectRestriction}}
+\index{EffectRestriction@{EffectRestriction}!EffectRestriction@{EffectRestriction}}
+\doxysubsubsection{\texorpdfstring{EffectRestriction()}{EffectRestriction()}}
+{\footnotesize\ttfamily Effect\+Restriction\+::\+Effect\+Restriction (\begin{DoxyParamCaption}\item[{std\+::string}]{suit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_effect_restriction_afe159d71e081f3053c1a1f45828bea9a}\label{class_effect_restriction_afe159d71e081f3053c1a1f45828bea9a}} 
+\index{EffectRestriction@{EffectRestriction}!getPtr@{getPtr}}
+\index{getPtr@{getPtr}!EffectRestriction@{EffectRestriction}}
+\doxysubsubsection{\texorpdfstring{getPtr()}{getPtr()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_effect}{Effect}} $>$ Effect\+Restriction\+::get\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns shared\+\_\+ptr to correct effect (to avoid using dynamic\+\_\+cast too much) 
+
+
+
+Implements \mbox{\hyperlink{class_effect_a2a6919c74ece5a27c5b280d261d3a524}{Effect}}.
+
+\mbox{\Hypertarget{class_effect_restriction_a0f6d09ce18b6c8c587f5fdfa231c4b58}\label{class_effect_restriction_a0f6d09ce18b6c8c587f5fdfa231c4b58}} 
+\index{EffectRestriction@{EffectRestriction}!getRestrictions@{getRestrictions}}
+\index{getRestrictions@{getRestrictions}!EffectRestriction@{EffectRestriction}}
+\doxysubsubsection{\texorpdfstring{getRestrictions()}{getRestrictions()}}
+{\footnotesize\ttfamily std\+::string Effect\+Restriction\+::get\+Restrictions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns banned suit name. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/effects/\mbox{\hyperlink{effect_restriction_8h}{effect\+Restriction.\+h}}\item 
+src/effects/\mbox{\hyperlink{effect_restriction_8cpp}{effect\+Restriction.\+cpp}}\end{DoxyCompactItemize}

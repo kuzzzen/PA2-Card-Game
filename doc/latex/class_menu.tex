@@ -1,0 +1,132 @@
+\hypertarget{class_menu}{}\doxysection{Menu Class Reference}
+\label{class_menu}\index{Menu@{Menu}}
+
+
+Class menu used as main menu and base class for in-\/game menu.  
+
+
+
+
+{\ttfamily \#include $<$menu.\+h$>$}
+
+Inheritance diagram for Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_menu}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_menu_a69569825cd50302e0e82d73efde16eca}{Menu}} (const std\+::initializer\+\_\+list$<$ std\+::string $>$ \&options)
+\item 
+\mbox{\hyperlink{class_menu_aa2a7da3da5e0bb84fc83e77b8e0823c1}{Menu}} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ $>$ \&options)
+\item 
+\mbox{\hyperlink{class_menu_a4e4972cad109d331f7e12b3527965291}{Menu}} (const std\+::vector$<$ std\+::string $>$ \&options)
+\item 
+virtual \mbox{\hyperlink{class_menu_a8fc4104b08c9a24d1dab18b82a82b7da}{$\sim$\+Menu}} ()=default
+\item 
+virtual uint8\+\_\+t \mbox{\hyperlink{class_menu_a7e373e1b2c649a5e5a79571badf050c3}{show\+And\+Get\+Choice}} (const std\+::string \&title)
+\begin{DoxyCompactList}\small\item\em Show menu and return choice index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_menu_a5bf01466af3d3fa7f758a9e19eb867ce}{initialize}} (const std\+::string \&title, const uint8\+\_\+t \&width, const int \&extend\+By)
+\begin{DoxyCompactList}\small\item\em Initializes a menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_menu_aeb8e0c6071e227a3aae99a363d27595e}{m\+\_\+\+Options}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{class_menu_a9d48b04fab4e07ac436a70ab74829726}{m\+\_\+\+Size}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_menu}{Menu}} options. \end{DoxyCompactList}\item 
+WINDOW $\ast$ \mbox{\hyperlink{class_menu_a71d7588ed5f019108610a684b075c73d}{m\+\_\+\+Menu}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class menu used as main menu and base class for in-\/game menu. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_menu_a69569825cd50302e0e82d73efde16eca}\label{class_menu_a69569825cd50302e0e82d73efde16eca}} 
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Menu\+::\+Menu (\begin{DoxyParamCaption}\item[{const std\+::initializer\+\_\+list$<$ std\+::string $>$ \&}]{options }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_menu_aa2a7da3da5e0bb84fc83e77b8e0823c1}\label{class_menu_aa2a7da3da5e0bb84fc83e77b8e0823c1}} 
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Menu\+::\+Menu (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ $>$ \&}]{options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_menu_a4e4972cad109d331f7e12b3527965291}\label{class_menu_a4e4972cad109d331f7e12b3527965291}} 
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Menu\+::\+Menu (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_menu_a8fc4104b08c9a24d1dab18b82a82b7da}\label{class_menu_a8fc4104b08c9a24d1dab18b82a82b7da}} 
+\index{Menu@{Menu}!````~Menu@{$\sim$Menu}}
+\index{````~Menu@{$\sim$Menu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{$\sim$Menu()}{~Menu()}}
+{\footnotesize\ttfamily virtual Menu\+::$\sim$\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_menu_a5bf01466af3d3fa7f758a9e19eb867ce}\label{class_menu_a5bf01466af3d3fa7f758a9e19eb867ce}} 
+\index{Menu@{Menu}!initialize@{initialize}}
+\index{initialize@{initialize}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void Menu\+::initialize (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title,  }\item[{const uint8\+\_\+t \&}]{width,  }\item[{const int \&}]{extend\+By }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Initializes a menu. 
+
+\mbox{\Hypertarget{class_menu_a7e373e1b2c649a5e5a79571badf050c3}\label{class_menu_a7e373e1b2c649a5e5a79571badf050c3}} 
+\index{Menu@{Menu}!showAndGetChoice@{showAndGetChoice}}
+\index{showAndGetChoice@{showAndGetChoice}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{showAndGetChoice()}{showAndGetChoice()}}
+{\footnotesize\ttfamily uint8\+\_\+t Menu\+::show\+And\+Get\+Choice (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Show menu and return choice index. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_menu_add437bd94a13322bf859259bb0943e27}{Game\+Menu}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_menu_a71d7588ed5f019108610a684b075c73d}\label{class_menu_a71d7588ed5f019108610a684b075c73d}} 
+\index{Menu@{Menu}!m\_Menu@{m\_Menu}}
+\index{m\_Menu@{m\_Menu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{m\_Menu}{m\_Menu}}
+{\footnotesize\ttfamily WINDOW$\ast$ Menu\+::m\+\_\+\+Menu \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_menu_aeb8e0c6071e227a3aae99a363d27595e}\label{class_menu_aeb8e0c6071e227a3aae99a363d27595e}} 
+\index{Menu@{Menu}!m\_Options@{m\_Options}}
+\index{m\_Options@{m\_Options}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{m\_Options}{m\_Options}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Menu\+::m\+\_\+\+Options\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_menu_a9d48b04fab4e07ac436a70ab74829726}\label{class_menu_a9d48b04fab4e07ac436a70ab74829726}} 
+\index{Menu@{Menu}!m\_Size@{m\_Size}}
+\index{m\_Size@{m\_Size}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{m\_Size}{m\_Size}}
+{\footnotesize\ttfamily uint8\+\_\+t Menu\+::m\+\_\+\+Size\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_menu}{Menu}} options. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/menus/\mbox{\hyperlink{menu_8h}{menu.\+h}}\item 
+src/menus/\mbox{\hyperlink{menu_8cpp}{menu.\+cpp}}\end{DoxyCompactItemize}

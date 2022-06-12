@@ -1,0 +1,75 @@
+\hypertarget{class_game_menu}{}\doxysection{Game\+Menu Class Reference}
+\label{class_game_menu}\index{GameMenu@{GameMenu}}
+
+
+In-\/game menu with cards and save/exit options.  
+
+
+
+
+{\ttfamily \#include $<$game\+Menu.\+h$>$}
+
+Inheritance diagram for Game\+Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_menu}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_menu_acb29d3d5af9984fc53cf52e19b2a5119}{Game\+Menu}} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ $>$ \&cards)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{class_game_menu_add437bd94a13322bf859259bb0943e27}{show\+And\+Get\+Choice}} (const std\+::string \&title) override
+\begin{DoxyCompactList}\small\item\em Show menu and return choice index but with cards (in-\/game hand menu) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_game_menu_a21fa2d513985733d6e5d3e9ecd036cdb}{show\+Card}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ \&card)
+\begin{DoxyCompactList}\small\item\em Shows card. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+In-\/game menu with cards and save/exit options. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_menu_acb29d3d5af9984fc53cf52e19b2a5119}\label{class_game_menu_acb29d3d5af9984fc53cf52e19b2a5119}} 
+\index{GameMenu@{GameMenu}!GameMenu@{GameMenu}}
+\index{GameMenu@{GameMenu}!GameMenu@{GameMenu}}
+\doxysubsubsection{\texorpdfstring{GameMenu()}{GameMenu()}}
+{\footnotesize\ttfamily Game\+Menu\+::\+Game\+Menu (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ $>$ \&}]{cards }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_menu_add437bd94a13322bf859259bb0943e27}\label{class_game_menu_add437bd94a13322bf859259bb0943e27}} 
+\index{GameMenu@{GameMenu}!showAndGetChoice@{showAndGetChoice}}
+\index{showAndGetChoice@{showAndGetChoice}!GameMenu@{GameMenu}}
+\doxysubsubsection{\texorpdfstring{showAndGetChoice()}{showAndGetChoice()}}
+{\footnotesize\ttfamily uint8\+\_\+t Game\+Menu\+::show\+And\+Get\+Choice (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Show menu and return choice index but with cards (in-\/game hand menu) 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_menu_a7e373e1b2c649a5e5a79571badf050c3}{Menu}}.
+
+\mbox{\Hypertarget{class_game_menu_a21fa2d513985733d6e5d3e9ecd036cdb}\label{class_game_menu_a21fa2d513985733d6e5d3e9ecd036cdb}} 
+\index{GameMenu@{GameMenu}!showCard@{showCard}}
+\index{showCard@{showCard}!GameMenu@{GameMenu}}
+\doxysubsubsection{\texorpdfstring{showCard()}{showCard()}}
+{\footnotesize\ttfamily void Game\+Menu\+::show\+Card (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_card}{Card}} $>$ \&}]{card }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shows card. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/menus/\mbox{\hyperlink{game_menu_8h}{game\+Menu.\+h}}\item 
+src/menus/\mbox{\hyperlink{game_menu_8cpp}{game\+Menu.\+cpp}}\end{DoxyCompactItemize}

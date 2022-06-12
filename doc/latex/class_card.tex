@@ -1,0 +1,143 @@
+\hypertarget{class_card}{}\doxysection{Card Class Reference}
+\label{class_card}\index{Card@{Card}}
+
+
+A class representing card structure.  
+
+
+
+
+{\ttfamily \#include $<$card.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_card_abedc64b36ac8f47f738604c8c86b729b}{Card}} (std\+::string name, std\+::string description, std\+::string suit, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_effect}{Effect}} $>$ $>$ effects)
+\item 
+virtual \mbox{\hyperlink{class_card_a24d9140b69cd7fcc6b4787350fdeb5e9}{$\sim$\+Card}} ()=default
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_effect}{Effect}} $>$ $>$ \mbox{\hyperlink{class_card_a3bf08bcc4a409ad9383151b0fbb411c1}{get\+Effects}} ()
+\begin{DoxyCompactList}\small\item\em Returns vector of some card\textquotesingle{}s effects. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_card_a906ec0559a62e3bed4ccd518cacbe34c}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Returns card name. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_card_ad8292653b62ffab05af810d3be240161}{get\+Description}} () const
+\begin{DoxyCompactList}\small\item\em Returns card description. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_card_a57f5af7c1cd9ab839f3fb32bb186681c}{get\+Effects\+As\+String}} () const
+\begin{DoxyCompactList}\small\item\em Returns effect list as a string. Used for saving games into files. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_card_aee4149cf300420237604615f7b57b1e8}{get\+Suit}} () const
+\begin{DoxyCompactList}\small\item\em Returns suit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_card_abde7e9fd0fb5a78dacf92f84d92b2c66}{m\+\_\+\+Title}}
+\item 
+std\+::string \mbox{\hyperlink{class_card_ad6bd9e14eb8b37ba44fcc30abe30e6e6}{m\+\_\+\+Description}}
+\item 
+std\+::string \mbox{\hyperlink{class_card_a7269daadf670dd94779ecde559eb2e77}{m\+\_\+\+Suit}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_effect}{Effect}} $>$ $>$ \mbox{\hyperlink{class_card_a3678ac9e378a81d4a89d6ce13bb5911a}{m\+\_\+\+Effects}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing card structure. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_card_abedc64b36ac8f47f738604c8c86b729b}\label{class_card_abedc64b36ac8f47f738604c8c86b729b}} 
+\index{Card@{Card}!Card@{Card}}
+\index{Card@{Card}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{Card()}{Card()}}
+{\footnotesize\ttfamily Card\+::\+Card (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{description,  }\item[{std\+::string}]{suit,  }\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_effect}{Effect}} $>$ $>$}]{effects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_card_a24d9140b69cd7fcc6b4787350fdeb5e9}\label{class_card_a24d9140b69cd7fcc6b4787350fdeb5e9}} 
+\index{Card@{Card}!````~Card@{$\sim$Card}}
+\index{````~Card@{$\sim$Card}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{$\sim$Card()}{~Card()}}
+{\footnotesize\ttfamily virtual Card\+::$\sim$\+Card (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_card_ad8292653b62ffab05af810d3be240161}\label{class_card_ad8292653b62ffab05af810d3be240161}} 
+\index{Card@{Card}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily std\+::string Card\+::get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns card description. 
+
+\mbox{\Hypertarget{class_card_a3bf08bcc4a409ad9383151b0fbb411c1}\label{class_card_a3bf08bcc4a409ad9383151b0fbb411c1}} 
+\index{Card@{Card}!getEffects@{getEffects}}
+\index{getEffects@{getEffects}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{getEffects()}{getEffects()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_effect}{Effect}} $>$ $>$ Card\+::get\+Effects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns vector of some card\textquotesingle{}s effects. 
+
+\mbox{\Hypertarget{class_card_a57f5af7c1cd9ab839f3fb32bb186681c}\label{class_card_a57f5af7c1cd9ab839f3fb32bb186681c}} 
+\index{Card@{Card}!getEffectsAsString@{getEffectsAsString}}
+\index{getEffectsAsString@{getEffectsAsString}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{getEffectsAsString()}{getEffectsAsString()}}
+{\footnotesize\ttfamily std\+::string Card\+::get\+Effects\+As\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns effect list as a string. Used for saving games into files. 
+
+\mbox{\Hypertarget{class_card_a906ec0559a62e3bed4ccd518cacbe34c}\label{class_card_a906ec0559a62e3bed4ccd518cacbe34c}} 
+\index{Card@{Card}!getName@{getName}}
+\index{getName@{getName}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Card\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns card name. 
+
+\mbox{\Hypertarget{class_card_aee4149cf300420237604615f7b57b1e8}\label{class_card_aee4149cf300420237604615f7b57b1e8}} 
+\index{Card@{Card}!getSuit@{getSuit}}
+\index{getSuit@{getSuit}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{getSuit()}{getSuit()}}
+{\footnotesize\ttfamily std\+::string Card\+::get\+Suit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns suit. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_card_ad6bd9e14eb8b37ba44fcc30abe30e6e6}\label{class_card_ad6bd9e14eb8b37ba44fcc30abe30e6e6}} 
+\index{Card@{Card}!m\_Description@{m\_Description}}
+\index{m\_Description@{m\_Description}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{m\_Description}{m\_Description}}
+{\footnotesize\ttfamily std\+::string Card\+::m\+\_\+\+Description\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_card_a3678ac9e378a81d4a89d6ce13bb5911a}\label{class_card_a3678ac9e378a81d4a89d6ce13bb5911a}} 
+\index{Card@{Card}!m\_Effects@{m\_Effects}}
+\index{m\_Effects@{m\_Effects}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{m\_Effects}{m\_Effects}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_effect}{Effect}}$>$ $>$ Card\+::m\+\_\+\+Effects\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_card_a7269daadf670dd94779ecde559eb2e77}\label{class_card_a7269daadf670dd94779ecde559eb2e77}} 
+\index{Card@{Card}!m\_Suit@{m\_Suit}}
+\index{m\_Suit@{m\_Suit}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{m\_Suit}{m\_Suit}}
+{\footnotesize\ttfamily std\+::string Card\+::m\+\_\+\+Suit\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_card_abde7e9fd0fb5a78dacf92f84d92b2c66}\label{class_card_abde7e9fd0fb5a78dacf92f84d92b2c66}} 
+\index{Card@{Card}!m\_Title@{m\_Title}}
+\index{m\_Title@{m\_Title}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{m\_Title}{m\_Title}}
+{\footnotesize\ttfamily std\+::string Card\+::m\+\_\+\+Title\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{card_8h}{card.\+h}}\item 
+src/\mbox{\hyperlink{card_8cpp}{card.\+cpp}}\end{DoxyCompactItemize}

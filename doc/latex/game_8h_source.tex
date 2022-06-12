@@ -1,0 +1,61 @@
+\hypertarget{game_8h_source}{}\doxysection{game.\+h}
+\label{game_8h_source}\index{src/game.h@{src/game.h}}
+\mbox{\hyperlink{game_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef GAME\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define GAME\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <queue>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{card_8h}{card.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{menu_8h}{menus/menu.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{game_menu_8h}{menus/gameMenu.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{player_8h}{players/player.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{player_computer_8h}{players/playerComputer.h}}"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_game}{Game}} \{}
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_game_a4735989677c1cab18866f3ae4ee0aa1c}{Game}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \mbox{\hyperlink{class_game_a4735989677c1cab18866f3ae4ee0aa1c}{Game}}(\textcolor{keyword}{const} std::queue <std::shared\_ptr<Card>> \&deck\_, \textcolor{keyword}{const} \textcolor{keywordtype}{int} \&gameMode);}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{21     \mbox{\hyperlink{class_game_a4735989677c1cab18866f3ae4ee0aa1c}{Game}}(\textcolor{keyword}{const} std::queue <std::shared\_ptr<Card>> \&deck\_, \textcolor{keyword}{const} \textcolor{keywordtype}{int} \&gameMode,}
+\DoxyCodeLine{22          \textcolor{keyword}{const} \textcolor{keywordtype}{int} \&startHP1, \textcolor{keyword}{const} \textcolor{keywordtype}{int} \&startHP2);}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     \mbox{\hyperlink{class_game_a3d09cd0b68ef69107d36360ca903e023}{\string~Game}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a8715391521d496fdeee9b69cc919cdcb}{start}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \&cardsPerHand1, \textcolor{keyword}{const} \textcolor{keywordtype}{int} \&cardsPerHand2, \textcolor{keywordtype}{bool} loaded);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{30     [[nodiscard]] \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_game_ae5831bae95b9805e415954bbbf70d504}{isStillPlayable}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_aa5b996762f6ce138e484bb26970951d1}{loadFromFile}}(\textcolor{keyword}{const} std::string \&gameName);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keyword}{static} std::vector <std::shared\_ptr<Card>>}
+\DoxyCodeLine{36     \mbox{\hyperlink{class_game_a22dc7e267905e29f5349b24d461be9bb}{removeRestricted}}(\textcolor{keyword}{const} std::vector <std::shared\_ptr<Card>> \&hand,}
+\DoxyCodeLine{37                      \textcolor{keyword}{const} std::string \&suit); \textcolor{comment}{// Removes restricted suit from hand for one turn}}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{keyword}{private}:}
+\DoxyCodeLine{41     std::queue <std::shared\_ptr<Card>> deck;    }
+\DoxyCodeLine{42     std::shared\_ptr <Player> players[2]; \textcolor{comment}{// Players before they get assigned as "{}attack"{} and "{}defense"{}}}
+\DoxyCodeLine{43     std::shared\_ptr <Player> attack, defense;    }
+\DoxyCodeLine{44     \textcolor{keyword}{static} std::string getGameName();   }
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} fillHand(std::vector <std::shared\_ptr<Card>> \&vector,}
+\DoxyCodeLine{46                   \textcolor{keyword}{const} \textcolor{keywordtype}{int} \&count);  }
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} showSwapScreen(\textcolor{keyword}{const} std::shared\_ptr <Card> \&lastCardPlayed, \textcolor{keyword}{const} std::string \&hpOfNextAttacker,}
+\DoxyCodeLine{48                         \textcolor{keyword}{const} std::string \&hpOfNextAttackersOpponent); }
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} showGotCardScreen(\textcolor{keyword}{const} std::shared\_ptr <Card> \&card) \textcolor{keyword}{const};   }
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} showDrawScreen() \textcolor{keyword}{const};    }
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} showWinnerScreen(\textcolor{keyword}{const} std::string \&winner) \textcolor{keyword}{const};    }
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} showOneTextScreen(\textcolor{keyword}{const} std::string \&text) \textcolor{keyword}{const}; }
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} saveGame();    }
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} end(); }
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} handleGame(); }
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57     uint8\_t xMax\{\}, yMax\{\}; }
+\DoxyCodeLine{58 \};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
